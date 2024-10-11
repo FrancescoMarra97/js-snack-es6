@@ -25,3 +25,16 @@ const biciclette = [
         peso: 7.3 
     }
 ];
+//inizializzo una variabile con il peso della prima bici per confrontarla
+let pesoMin=biciclette[0].peso;
+
+for (let i = 0; i < biciclette.length; i++) {
+    if (biciclette[i].peso<pesoMin) {
+        pesoMin=biciclette[i].peso;
+    }
+    
+}
+console.log(pesoMin);
+
+const resultEl = document.getElementById("result")
+resultEl.innerText= `la bici più leggera è ${pesoMin.nome} con il peso di: ${pesoMin}`
