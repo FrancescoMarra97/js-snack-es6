@@ -56,3 +56,10 @@ let squadre = [
         falli: 0 
     }
 ];
+
+for (const key in squadre) {
+    squadre.punti = Math.floor(Math.random() * 100) + 1;
+    squadre.falli = Math.floor(Math.random() * 100) + 1;
+        
+    }
+console.log(squadre);
