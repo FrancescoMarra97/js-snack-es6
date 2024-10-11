@@ -57,9 +57,11 @@ let squadre = [
     }
 ];
 
+let newArray=[];
 for (const key in squadre) {
-    squadre.punti = Math.floor(Math.random() * 100) + 1;
-    squadre.falli = Math.floor(Math.random() * 100) + 1;
+    squadre[key].punti = Math.floor(Math.random() * 100) + 1;
+    squadre[key].falli = Math.floor(Math.random() * 100) + 1;
         
+    newArray.push(squadre[key].nome, squadre[key].falli)
     }
-console.log(squadre);
+console.log(newArray);
